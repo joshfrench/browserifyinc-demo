@@ -4,8 +4,8 @@
     "browserify-incremental": "^2.0.0"
   },
   "scripts": {
-    "clean": "rm -f browserify-cache.json",
-    "build": "NODE_PATH=. ./node_modules/.bin/browserifyinc --require foo in.js"
+    "clean": "rm -f browserify-cache.json && rm -f out.js",
+    "build": "NODE_PATH=. ./node_modules/.bin/browserifyinc --require foo in.js -o out.js"
   }
 }
 
